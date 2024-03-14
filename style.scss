@@ -1,0 +1,154 @@
+// Shared styles
+$input-padding: 11px 14px;
+$button-padding: 8px;
+
+// Styles for the first HTML file
+form.form-first {
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+
+    input[type="text"] {
+        width: 560px;
+        height: 47px;
+        border: 0.01px solid grey;
+        border-radius: 50px;
+        font-size: 18px;
+        text-indent: 38px;
+        
+        &:hover {
+            cursor: pointer;
+            border-color: transparent;
+            box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.4);
+        }
+        
+        &:focus {
+            box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.4);
+            outline: none;
+        }
+    }
+
+    .input-group-text {
+        position: absolute;
+        left: 10px;
+        top: 18px;
+        color: grey;
+    }
+
+    .search-button {
+        position: absolute;
+        top: 70px;
+        right: 285px;
+        background-color: rgba(128, 128, 128, 0.1);
+        border: 1px solid white;
+        padding: $input-padding;
+        border-radius: 2px;
+        
+        &:hover {
+            cursor: pointer;
+            border-color: rgba(128, 128, 128, 0.4);
+        }
+        
+        &:focus {
+            border-color: blue;
+        }
+    }
+
+    .lucky-button {
+        position: absolute;
+        top: 70px;
+        right: 140px;
+        background-color: rgba(128, 128, 128, 0.1);
+        border: 1px solid white;
+        padding: $input-padding;
+        border-radius: 2px;
+        
+        &:hover {
+            cursor: pointer;
+            border-color: rgba(128, 128, 128, 0.4);
+        }
+        
+        &:focus {
+            border-color: blue;
+        }
+    }
+}
+
+a {
+    position: relative;
+    left: 980px;
+    top: 15px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: $button-padding;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.4);
+    color: rgb(74, 72, 72);
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Styles for the second HTML file
+form.form-second {
+    input[type="hidden"] {
+        display: none;
+    }
+    
+    input[type="text"] {
+        width: 300px;
+        height: 30px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding: 5px;
+        margin-right: 10px;
+    }
+    
+    button {
+        padding: $button-padding;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        
+        &:hover {
+            cursor: pointer;
+            background-color: #0056b3;
+        }
+    }
+    
+    a {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .input-group-text {
+        position: absolute;
+        left: 10px;
+        top: 18px;
+        color: grey;
+    }
+
+    button[type="submit"] {
+        position: absolute;
+        top: 70px;
+        right: 285px;
+        background-color: rgba(128, 128, 128, 0.1);
+        border: 1px solid white;
+        padding: 11px 14px;
+        border-radius: 2px;
+    }   
+        &:hover{
+            cursor: pointer;
+            border-color: rgba(128, 128, 128, 0.4);
+        }
+
+        &:focus{
+            border-color: blue;
+        }
+}
