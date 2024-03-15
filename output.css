@@ -1,14 +1,10 @@
-/* body{
-    padding: 3px;
-} */
 form {
   position: absolute;
   left: 50%;
   top: 43%;
   transform: translate(-50%, -50%);
 }
-
-input[type=submit].search-button {
+form input[type=submit].search-button {
   position: absolute;
   top: 70px;
   right: 285px;
@@ -17,8 +13,14 @@ input[type=submit].search-button {
   padding: 11px 14px;
   border-radius: 2px;
 }
-
-input[name=btnI].lucky-button {
+form input[type=submit].search-button:hover {
+  cursor: pointer;
+  border-color: rgba(128, 128, 128, 0.4);
+}
+form input[type=submit].search-button:focus {
+  border-color: blue;
+}
+form input[name=btnI].lucky-button {
   position: absolute;
   top: 70px;
   right: 140px;
@@ -27,46 +29,45 @@ input[name=btnI].lucky-button {
   padding: 11px 14px;
   border-radius: 2px;
 }
-
-input[type=text] {
+form input[name=btnI].lucky-button:hover {
+  cursor: pointer;
+  border-color: rgba(128, 128, 128, 0.4);
+}
+form input[name=btnI].lucky-button:focus {
+  border-color: blue;
+}
+form input[type=text] {
   width: 560px;
   height: 47px;
-  border: 0.01px solid grey;
+  border: 1px solid grey;
   border-radius: 50px;
   font-size: 18px;
   text-indent: 38px;
 }
-
-input[type=text]:hover {
+form input[type=text]:hover {
   cursor: pointer;
   border-color: transparent;
   box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.4);
 }
-
-input[type=text]:focus {
+form input[type=text]:focus {
   box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.4);
   outline: none;
 }
-
-.input-group-text {
+form input[type=text]::placeholder {
+  text-align: center;
+  font-size: 20px;
+}
+form .input-group-text {
   position: absolute;
   left: 10px;
   top: 18px;
   color: grey;
 }
 
-input[type=submit]:hover {
+input[type=submit].search-button:hover,
+input[type=submit].search-button:focus {
   cursor: pointer;
   border-color: rgba(128, 128, 128, 0.4);
-}
-
-input[type=submit]:focus {
-  border-color: blue;
-}
-
-input[type=text]::placeholder {
-  text-align: center;
-  font-size: 20px;
 }
 
 a {
@@ -83,7 +84,6 @@ a {
   box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.4);
   color: rgb(74, 72, 72);
 }
-
 a:hover {
   text-decoration: underline;
 }

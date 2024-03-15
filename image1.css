@@ -1,0 +1,70 @@
+form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Center align the form content */
+}
+form input[type=hidden] {
+  display: none;
+}
+form button[type=submit] {
+  position: relative; /* Change to relative position */
+  background-color: rgba(128, 128, 128, 0.1);
+  border: 1px solid white;
+  padding: 11px 14px;
+  border-radius: 2px;
+  margin-top: 10px; /* Adjust button position */
+}
+form input[type=text] {
+  width: 300px; /* Reduced width */
+  height: 35px; /* Reduced height */
+  border: 1px solid grey; /* Corrected border */
+  border-radius: 20px;
+  font-size: 16px; /* Reduced font size */
+  text-indent: 20px; /* Adjusted text indent */
+}
+form input[type=text]:hover {
+  cursor: pointer;
+  border-color: transparent;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.4); /* Adjusted shadow */
+}
+form input[type=text]:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.4); /* Adjusted shadow */
+}
+form input[type=text]::placeholder {
+  text-align: center;
+  font-size: 14px; /* Adjusted placeholder font size */
+}
+form .input-group-text {
+  position: absolute;
+  left: 10px;
+  top: 12px; /* Adjusted top position */
+  color: grey;
+}
+
+button[type=submit]:hover,
+button[type=submit]:focus {
+  cursor: pointer;
+  border-color: rgba(128, 128, 128, 0.4);
+}
+
+a {
+  position: absolute;
+  right: 20px; /* Adjusted right position */
+  top: 20px; /* Adjusted top position */
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(74, 72, 72);
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.4); /* Adjusted shadow */
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=image1.css.map */
