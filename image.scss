@@ -10,43 +10,54 @@ form {
     }
 
     button[type="submit"] {
-        position: relative; /* Change to relative position */
+        position: absolute;
+        top: 70px;
+        right: 250px;
         background-color: rgba(128, 128, 128, 0.1);
         border: 1px solid white;
         padding: 11px 14px;
         border-radius: 2px;
-        margin-top: 10px; /* Adjust button position */
+
+        &:hover {
+            cursor: pointer;
+            border-color: rgba(128, 128, 128, 0.4);
+        }
+
+        &:focus {
+            border-color: blue;
+        }
     }
 
     input[type="text"] {
-        width: 300px; /* Reduced width */
-        height: 35px; /* Reduced height */
-        border: 1px solid grey; /* Corrected border */
-        border-radius: 20px;  
-        font-size: 16px; /* Reduced font size */
-        text-indent: 20px; /* Adjusted text indent */
+        width: 560px;
+        height: 47px;
+        border: 1px solid grey; // changed 0.01px to 1px
+        border-radius: 50px;  
+        font-size: 18px;
+        text-indent: 38px;
+
 
         &:hover {
             cursor: pointer;
             border-color: transparent;
-            box-shadow: 0 0 10px rgba(128, 128, 128, 0.4); /* Adjusted shadow */
+            box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.4); /* Adjusted shadow */
         }
 
         &:focus {
             outline: none;
-            box-shadow: 0 0 10px rgba(128, 128, 128, 0.4); /* Adjusted shadow */
+            box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.4); /* Adjusted shadow */
         }
 
         &::placeholder {
             text-align: center;
-            font-size: 14px; /* Adjusted placeholder font size */
+            font-size: 18px; /* Adjusted placeholder font size */
         }
     }
 
     .input-group-text {
         position: absolute;
         left: 10px;
-        top: 12px; /* Adjusted top position */
+        top: 18px;
         color: grey;
     }
 }
@@ -54,21 +65,23 @@ form {
 button[type="submit"]:hover,
 button[type="submit"]:focus {
     cursor: pointer;
-    border-color: rgba(128, 128, 128, 0.4);
+    border-color: rgba(128,128,128,0.4);
 }
 
 a {
-    position: absolute;
-    right: 20px; /* Adjusted right position */
-    top: 20px; /* Adjusted top position */
+    position: relative;
+    left: 1060px; // This value seems excessively large; adjust as needed
+    top: 15px;
     text-decoration: none;
     border: 2px solid transparent;
     padding: 8px;
     border-radius: 20px;
-    font-size: 16px;
+    margin-right: 10px;
+    font-size: 19px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.4);
     color: rgb(74, 72, 72);
-    box-shadow: 0 0 10px rgba(128, 128, 128, 0.4); /* Adjusted shadow */
+   
 
     &:hover {
         text-decoration: underline;

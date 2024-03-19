@@ -2,30 +2,36 @@
 <html lang="en">
 <head>
     <title>Advanced Search</title>
+    <link rel="stylesheet" href="search.css">
 </head>
 <body>
     
-    <h1>Advanced Search</h1>
+    <h1 class="search-heading">Advanced Search</h1>
     <form>
-        <h1>find this pages with...</h1>
-        <br>
-        <label for="q">all these words: </label>
-        <input type="text" name="q" id="q"/>
-        
-        <br>
-        <label for="q">this exact word or phrase: </label>
-        <input type="text" name="q" id="q"/>
-        
-        <br>
-        <label for="q">any of these words: </label>
-        <input type="text" name="q" id="q" placeholder="Search..." />
+        <h3 class="page-heading">find this pages with...</h3>
 
-        <br>
-        <label for="q">none of these words: </label>
-        <input type="text" name="q" id="q" placeholder="Search..." />
-        <br>
+        <div class="all" >
+            <label for="q">all these words:</label> 
+            <input type="text" name="q" id="q" />
+        </div>
         
-        <button type="submit">Search</button>    
+        <div class="exact">
+            <label for="q">this exact word or phrase:</label> 
+            <input type="text" name="q" id="q" />
+        </div>
+        
+        <div class="any">
+            <label for="q">any of these words:</label>
+            <input type="text" name="q" id="q"  />
+        </div>
+
+        <div class="none">
+            <label for="q">none of these words:</label>
+            <input type="text" name="q" id="q"/>
+        </div>
+
+        
+        <button type="submit">Advance Search</button>    
 
     </form>
 

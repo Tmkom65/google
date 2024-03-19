@@ -27,11 +27,11 @@ form {
         position: absolute;
         top: 70px;
         right: 140px;
-        background-color: rgba(128, 128, 128, 0.1);
+        background-color: rgba( 128, 128, 128, 0.1);
         border: 1px solid white;
         padding: 11px 14px;
         border-radius: 2px;
-
+    
         &:hover {
             cursor: pointer;
             border-color: rgba(128, 128, 128, 0.4);
@@ -63,7 +63,7 @@ form {
 
         &::placeholder {
             text-align: center;
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 
