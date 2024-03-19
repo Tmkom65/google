@@ -1,131 +1,92 @@
-
-form{
-    position: relative;
-    top: 30px;
-    border-top: 1px solid black;
-    margin-left: 20px;
-    margin-top: 20px;
-    padding: 20px;   
-    border-bottom: 1px solid black;
+form {
+  position: relative;
+  top: 30px;
+  border-top: 1px solid black;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+form h1.search-heading {
+  position: relative;
+  top: 27px;
+  margin-left: 45px;
+  font-family: Arial, sans-serif;
+  color: red;
+  padding-top: 30px;
+  font-size: 20px;
+}
+form h3.page-heading {
+  font-family: Arial, sans-serif;
+  font-size: small;
+  margin-bottom: 18px;
+}
+form div {
+  margin-bottom: 18px;
+}
+form .all input[type=text],
+form .exact input[type=text],
+form .any input[type=text],
+form .none input[type=text] {
+  border: 1px solid black;
+  width: 600px;
+  height: 24px;
+  text-indent: 10px;
+}
+form .all input[type=text]:focus,
+form .exact input[type=text]:focus,
+form .any input[type=text]:focus,
+form .none input[type=text]:focus {
+  outline: none;
+  border-color: skyblue;
+  box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.5);
+}
+form .all input[type=text] {
+  margin-left: 117px;
+}
+form .exact input[type=text] {
+  margin-left: 53px;
+}
+form .any input[type=text] {
+  margin-left: 95px;
+}
+form .none input[type=text] {
+  margin-left: 87px;
+}
+form a {
+  position: absolute;
+  left: 1090px;
+  top: 5px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 8px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 19px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.4);
+  color: rgb(74, 72, 72);
+}
+form a:hover {
+  text-decoration: underline;
+}
+form button[type=submit] {
+  position: relative;
+  left: 769px;
+  top: 8px;
+  padding: 3px;
+  background-color: rgb(104, 104, 223);
+  color: white;
+  padding: 9px 13px;
+  font-size: 14px;
+  font-family: "robot", sans-serif;
+  border-radius: 5px;
+  border: 1px solid rgb(104, 104, 223);
+}
+form button[type=submit]:hover {
+  cursor: pointer;
+  background-color: blue;
+  border-color: rgb(183, 171, 171);
 }
 
-h1.search-heading{
-    position: relative;
-    top: 27px;
-    margin-left: 45px;
-    font-family: Arial, sans-serif;
-    color: red;
-    padding-top: 30px;
-    font-size: 20px;
-}
-
-h3.page-heading{
-    font-family:  Arial, sans-serif;
-    font-size: small;
-    margin-bottom: 18px;
-}
-
-div{
-    margin-bottom: 18px;
-
- }
-
-.all input[type="text"]{
-    margin-left: 117px;
-    border: 1px solid black;
-    width: 600px;
-    height: 24px;
-    text-indent: 10px;
- }
-
-.exact input[type="text"]{
-    margin-left: 53px;
-    border: 1px solid black;
-    width: 600px;
-    height: 24px;
-    text-indent: 10px;
-
- }
-
-.any input[type="text"]{
-    margin-left: 95px;
-    border: 1px solid black;
-    width: 600px;
-    height: 24px;
-    text-indent: 10px;
- }    
-
-.none input[type="text"]{
-    margin-left: 87px;
-    border: 1px solid black;
-    width: 600px;
-    height: 24px;
-    text-indent: 10px;
- }
-
-a {
-    position: absolute;
-    left: 1090px;
-    top: 5px;
-    text-decoration: none;
-    border: 2px solid transparent;
-    padding: 8px;
-    border-radius: 20px;
-    margin-right: 10px;
-    font-size: 19px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.4);
-    color: rgb(74, 72, 72);
-   
- }
-
- button[type="submit"]{
-    position: relative;
-    left: 769px;
-    top: 8px;
-    padding: 3px;
-    background-color: rgb(104, 104, 223);
-    color: white;
-    padding: 9px 13px ;
-    font-size: 14px;
-    font-family: 'robot', sans-serif;
-    border-radius: 5px; 
-    border: 1px solid rgb(104, 104, 223);
- }   
-
- button[type="submit"]:hover{
-   cursor: pointer;
-   background-color: blue;
-   border-color: rgb(183, 171, 171) ;
- }
- 
- 
-
- 
- .all input[type="text"]:focus{
-    outline: none;
-    border-color: skyblue;
-    box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.5);
- }
-
- .exact input[type="text"]:focus{
-    outline: none;
-    border-color: skyblue;
-    box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.5);
- }
- 
- .any input[type="text"]:focus{
-    outline: none;
-    border-color: skyblue;
-    box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.5);
- }
-
- .none input[type="text"]:focus{
-    outline: none;
-    border-color: skyblue;
-    box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.5);
- }
-
- a:hover{
-   text-decoration: underline;
- }
+/*# sourceMappingURL=search.css.map */
