@@ -7,15 +7,6 @@ form {
   padding: 20px;
   border-bottom: 1px solid black;
 }
-form h1.search-heading {
-  position: relative;
-  top: 27px;
-  margin-left: 45px;
-  font-family: Arial, sans-serif;
-  color: red;
-  padding-top: 30px;
-  font-size: 20px;
-}
 form h3.page-heading {
   font-family: Arial, sans-serif;
   font-size: small;
@@ -53,23 +44,6 @@ form .any input[type=text] {
 form .none input[type=text] {
   margin-left: 87px;
 }
-form a {
-  position: absolute;
-  left: 1090px;
-  top: 5px;
-  text-decoration: none;
-  border: 2px solid transparent;
-  padding: 8px;
-  border-radius: 20px;
-  margin-right: 10px;
-  font-size: 19px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.4);
-  color: rgb(74, 72, 72);
-}
-form a:hover {
-  text-decoration: underline;
-}
 form button[type=submit] {
   position: relative;
   left: 769px;
@@ -87,6 +61,34 @@ form button[type=submit]:hover {
   cursor: pointer;
   background-color: blue;
   border-color: rgb(183, 171, 171);
+}
+
+a {
+  position: absolute;
+  left: 1090px;
+  top: 5px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 8px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 19px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.4);
+  color: rgb(74, 72, 72);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1.search-heading {
+  position: relative;
+  top: 27px;
+  margin-left: 45px;
+  font-family: Arial, sans-serif;
+  color: red;
+  padding-top: 30px;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=search.css.map */
